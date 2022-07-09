@@ -1,7 +1,12 @@
-import React from "react";
+import React,{useState} from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 export default function Navbar() {
+ const [mobile,setMobile]=useState(false);
+ const btnMobile=()=>{
+  setMobile(mobile=>!mobile)
+ }
   return (
-    <div>
+    <body className={mobile && "mobile-nav-visible"}>
       <div className="header">
         <div className="shell">
           <div className="header__inner">
@@ -46,7 +51,7 @@ export default function Navbar() {
                   ></path>
                 </svg>
               </a>
-              <button type="button" className="burger">
+              <button onClick={btnMobile} type="button" className="burger">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -56,7 +61,7 @@ export default function Navbar() {
               <nav className="nav">
                 <ul>
                   <li className="">
-                    <a className="animated-link " href="/">
+                    <Link className="animated-link " to="/">
                         H
                       <span className="nav__char ad2">
                       </span>
@@ -69,23 +74,23 @@ export default function Navbar() {
                       <span className="nav__char ad5">
                         e
                       </span>
-                    </a>
+                    </Link>
                   </li>
                   <div className="nav__inner">
                     <li className="">
-                      <a href="/buy-instagram-likes">Buy Instagram Likes</a>
+                      <Link to="/buy-instagram-likes">Buy Instagram Likes</Link>
                     </li>
                     <li className="">
-                      <a href="/buy-instagram-followers">
+                      <Link to="/buy-instagram-followers">
                         Buy Instagram Followers
-                      </a>
+                      </Link>
                     </li>
                     <li className="">
-                      <a href="/buy-instagram-views">Buy Instagram Views</a>
+                      <Link to="/buy-instagram-views">Buy Instagram Views</Link>
                     </li>
                   </div>
                   <li className="hidden-xs">
-                    <a className="animated-link" href="/contact">
+                    <Link className="animated-link" to="/contact">
                       <span className="nav__char">
                         C
                       </span>
@@ -118,7 +123,7 @@ export default function Navbar() {
                       <span className="nav__char">
                         s
                       </span>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </nav>
@@ -152,6 +157,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-    </div>
+    </body>
   );
 }

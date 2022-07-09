@@ -1,0 +1,44 @@
+/* .header .progress {
+    height: 6px;
+    background: #EFEFEF;
+}
+
+.header .logo {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    outline: 0 none;
+    color: #207fb3;
+}
+a {
+    background-color: transparent;
+}
+.header a.back, .header a.next, .header a.user {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #303435;
+    text-decoration: none;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.header a.back {
+    position: absolute;
+    top: 26px;
+    left: 32px;
+    bottom: 0;
+    padding-left: 16px;
+}
+.header .contain {
+    position: relative;
+    height: 79px;
+}
+.header {
+    background: #fff;
+    text-align: center;
+    font-size: 0;
+} */
