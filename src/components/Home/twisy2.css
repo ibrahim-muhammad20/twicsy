@@ -225,7 +225,7 @@ textarea {
     }
 }
 
-@font-face {
+/* @font-face {
     font-family: Euclid Circular A;
     src: url(/_next/static/media/EuclidCircularA-Regular-WebS.aa128c88.woff2) format("woff2"), url(/_next/static/media/EuclidCircularA-Regular-WebS.8d260cdd.woff) format("woff");
     font-weight: 400;
@@ -247,7 +247,7 @@ textarea {
     font-weight: 600;
     font-style: normal;
     font-display: swap
-}
+} */
 
 html {
     font-size: 62.5%
@@ -276,8 +276,8 @@ body {
      color: #fff
 }
 
- body.no-scroll {
-    overflow: hidden;
+body.no-scroll {
+    overflow: hidden
 }
 
 a:not([class]) {

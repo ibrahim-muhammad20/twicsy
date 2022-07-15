@@ -1,5 +1,5 @@
 import React from 'react'
-// import './Enter.css'
+
 import Enterdetails from './Enterdetails'
 import EnterNavbar from './EnterNavbar'
 

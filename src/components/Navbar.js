@@ -1,12 +1,26 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import App from "../App";
 export default function Navbar() {
+//  let {btnmobile}=props;
+// onClick(event) {
+//   goToTop();
+//   btnMobile();
+// }
+  const goToTop = () => {
+    window.scrollTo({
+        top: 5,
+        behavior: "smooth",
+    });
+};
+
  const [mobile,setMobile]=useState(false);
  const btnMobile=()=>{
   setMobile(mobile=>!mobile)
  }
   return (
-    <body className={mobile && "mobile-nav-visible"}>
+    <body  className={mobile && "mobile-nav-visible no-scroll"}>
+    
       <div className="header">
         <div className="shell">
           <div className="header__inner">
@@ -51,7 +65,7 @@ export default function Navbar() {
                   ></path>
                 </svg>
               </a>
-              <button onClick={btnMobile} type="button" className="burger">
+              <button onClick={btnMobile } type="button" className="burger">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -61,7 +75,7 @@ export default function Navbar() {
               <nav className="nav">
                 <ul>
                   <li className="">
-                    <Link className="animated-link " to="/">
+                    <Link className="animated-link " to="/" onClick={() => { goToTop(); btnMobile();}}>
                         H
                       <span className="nav__char ad2">
                       </span>
@@ -78,19 +92,20 @@ export default function Navbar() {
                   </li>
                   <div className="nav__inner">
                     <li className="">
-                      <Link to="/buy-instagram-likes">Buy Instagram Likes</Link>
+                      
+                      <Link to="/buy-instagram-likes" onClick={() => { goToTop(); btnMobile();}}>Buy Instagram Likes</Link>
                     </li>
                     <li className="">
-                      <Link to="/buy-instagram-followers">
+                      <Link to="/buy-instagram-followers"  onClick={() => { goToTop(); btnMobile();}}>
                         Buy Instagram Followers
                       </Link>
                     </li>
                     <li className="">
-                      <Link to="/buy-instagram-views">Buy Instagram Views</Link>
+                      <Link to="/buy-instagram-views" onClick={() => { goToTop(); btnMobile();}}>Buy Instagram Views</Link>
                     </li>
                   </div>
                   <li className="hidden-xs">
-                    <Link className="animated-link" to="/contact">
+                    <Link className="animated-link" onClick={() => { goToTop(); btnMobile();}} to="/contact">
                       <span className="nav__char">
                         C
                       </span>
@@ -158,5 +173,6 @@ export default function Navbar() {
         </div>
       </div>
     </body>
+    
   );
 }

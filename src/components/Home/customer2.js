@@ -3,6 +3,7 @@ import Draggable from "react-draggable";
 import motion from "framer-motion";
 import Slider from "react-slick";
 import Form from "../Form";
+
 export default function Customer2() {
   var settings = {
     dots: true,

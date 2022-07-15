@@ -1,16 +1,17 @@
-// import "./Enter.css";
+import "./checkout.css"
 import React from 'react'
-
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 export default function EnterNavbar() {
   return (
-    <div>
+    <div id="f1">
+      
        <div className="header ">
     <div className="contain">
-      <a href="https://twicsy.com/buy-instagram-likes" className="back">
-        <span className="hidden-xs">Back</span>
-      </a>
+      <Link to="/" className="back">
+        <span style={{color:"#0A7E7E"}} className="hidden-xs">Back</span>
+      </Link>
       <a href="/" className="logo">
-        <img className="img2"src="../images2/logo.svg" alt="Twicsy" />
+        <img className="img"src="../images2/logo.svg" alt="Twicsy" />
       </a>
     </div>
     <div className="progress">
