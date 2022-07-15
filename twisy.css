@@ -276,8 +276,8 @@ body {
      color: #fff
 }
 
-body.no-scroll {
-    overflow: hidden
+ body.no-scroll {
+    overflow: hidden;
 }
 
 a:not([class]) {
