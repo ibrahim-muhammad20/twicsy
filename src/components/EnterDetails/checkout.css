@@ -298,9 +298,10 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 #f1 fieldset {
-  border: 1px solid #c0c0c0;
+  border: 1px solid #ffe601;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
+  border-radius: 15px;
 }
 #f1 legend {
   border: 0;
@@ -3462,6 +3463,7 @@ Politely add spaces to input values to increase readability (credit card numbers
   
 }
 #f1 .dropdown-menu {
+  height:180px;
   position: relative;
   padding: 0;
   max-height: 275px;
@@ -4066,7 +4068,7 @@ a.btn:hover {
 }
 #f1 .step2 .images {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   flex-wrap: wrap;
   user-select: none;
   margin: -8px;
@@ -6017,5 +6019,8 @@ a.btn:hover {
   }
   #f1 .offer-body .items-inner {
     margin: 0px -6px;
+  }
+  #f1 .full{
+    width: auto;
   }
 }

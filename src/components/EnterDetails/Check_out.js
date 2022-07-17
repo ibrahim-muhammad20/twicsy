@@ -1,21 +1,33 @@
 import "./checkout.css"
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from "react-dom";
-import BtnCheck from './BtnCheck'
+import { Elements } from "@stripe/react-stripe-js"
+import { loadStripe } from "@stripe/stripe-js"
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
+import StripeContainer from "../Stripe/StripeContainer";
+import PaymentForm from "../Stripe/PaymentForm";
+
+const PUBLIC_KEY = "pk_test_51LMC1UBzIrI8f3hBFOXEodV9ae4MrbaTUvgB00VUYMkHCGvfMPtviNSnphBhyIsZDunxsUWbiWMLiZn1KTpBA0q2000Dl9eN79";
+const stripeTestPromise = loadStripe(PUBLIC_KEY)
 const PayPalButton = window.paypal.Buttons.driver("react", { React, ReactDOM });
 
 
 
-
-
-export default function Check_out() {
+export default function Checkout(props) {
+  var textstyle = {
+    padding:"18px",
+    color: "#0A7E7E"
+  };
+  const [paypal,setPaypal]=useState(false);
+  const [stripe2,setStrip2]=useState(false);
+  
   const createOrder = (data, actions) => {
     return actions.order.create({
       purchase_units: [
         {
           amount: {
-            value: "0.01",
+            currency_code:"USD",
+            value: props.prize
           },
         },
       ],
@@ -24,6 +36,7 @@ export default function Check_out() {
   const onApprove = (data, actions) => {
     return actions.order.capture();
   };
+  
   return (
         
     <>
@@ -34,7 +47,7 @@ export default function Check_out() {
       <span className="hidden-xs" style={{color:"white"}}>Back</span>
     </Link>
     <a href="/" className="logo">
-      <img src="/images2/logo.svg" alt="Twicsy" />
+    <h3 className="img" style={textstyle}>ViewsInsta </h3>
     </a>
   </div>
   <div className="progress">
@@ -66,7 +79,7 @@ export default function Check_out() {
             </div>
             <div className="text">Order summary</div>
             <div className="price">
-              <span className="total-cost-mini">$2.97</span>
+              <span className="total-cost-mini">${props.prize}</span>
             </div>
             <div className="arrow">
               <i className="far fa-angle-down" aria-hidden="true" />
@@ -80,7 +93,7 @@ export default function Check_out() {
                 src="../images/women.png"
               />
               <div className="info">
-                <div className="name">@ibbibhai</div>
+                <div className="name">@{props.username}</div>
                 <div className="change">
                   <a href="/order/enter-details" style={{color:"white"}}>Change username</a>
                 </div>
@@ -96,13 +109,13 @@ export default function Check_out() {
                 </div>
                 <div className="info">
                   <span>
-                    <strong>100</strong> likes
+                    <strong>{props.likes}</strong> likes 
                   </span>
                   <div className="extra">
-                    <strong>100</strong> likes / <strong>1</strong> posts
+                    <strong>{props.likes}</strong> likes / <strong>1</strong> posts
                   </div>
                 </div>
-                <div className="price">$2.97</div>
+                <div className="price">${props.prize}</div>
               </div>
               <div className="r-item upsell">
                 <div className="icon">
@@ -145,8 +158,8 @@ export default function Check_out() {
               <strong className="total-discount price" />
             </div>
             <div className="r-total">
-              <strong className="line">Total to pay</strong>
-              <strong className="total-cost price">$2.97 USD</strong>
+              <strong className="line">Total to pay </strong>
+              <strong className="total-cost price">{"="} ${props.prize}</strong>
             </div>
             <hr className="hide-sm" />
             <div className="r-feature">
@@ -319,153 +332,35 @@ export default function Check_out() {
               </svg>
             </div>
           </h3>
-          <div className="form-group">
-            <input
-              id="cardName"
-              className="form-control no-icon secure"
-              type="text"
-              placeholder="Cardholder name"
-              maxLength={64}
-              defaultValue=""
-              data-hj-suppress=""
-            />
-          </div>
-          <BtnCheck/>
-         
-          {/* <Paypal/> */}
-          <div className="frames-container">
-            <iframe
-              className="cko-iframe theme-standard loaded ready"
-              id="cko-iframe-id"
-              src="https://js.checkout.com/frames/?v=1.0.16&publicKey=pk_d256a252-8cd5-46fa-bc0c-84685a309fdf&theme=standard"
-            />
-            
-          </div>
-          <PayPalButton
-      createOrder={(data, actions) => createOrder(data, actions)}
-      onApprove={(data, actions) => onApprove(data, actions)}
-    />
-          <div
-            id="cardError"
-            className="form-error-text"
-            style={{ display: "none" }}
-          >
-            Please enter a valid credit card.
-          </div>
-          <hr />
-          <h3>Billing Address</h3>
-          <div className="row">
-            <div className="col-sm-6">
-              <div className="form-group">
-                <div className="select-wrap">
-                  <select
-                    id="cardCountry"
-                    className="form-control no-icon secure"
-                    data-select="PK"
-                  >
-                    <option value="" disabled="" selected="">
-                      Country
-                    </option>
-                    <option value="US">United States (US)</option>
-                    <option value="AR">Argentina (AR)</option>
-                    <option value="AM">Armenia (AM)</option>
-                    <option value="AU">Australia (AU)</option>
-                    <option value="AT">Austria (AT)</option>
-                    <option value="BH">Bahrain (BH)</option>
-                    <option value="BE">Belgium (BE)</option>
-                    <option value="BR">Brazil (BR)</option>
-                    <option value="BG">Bulgaria (BG)</option>
-                    <option value="CA">Canada (CA)</option>
-                    <option value="CL">Chile (CL)</option>
-                    <option value="CN">China (CN)</option>
-                    <option value="CO">Colombia (CO)</option>
-                    <option value="CI">Côte d'Ivoire (CI)</option>
-                    <option value="HR">Croatia (HR)</option>
-                    <option value="CY">Cyprus (CY)</option>
-                    <option value="DK">Denmark (DK)</option>
-                    <option value="EG">Egypt (EG)</option>
-                    <option value="EE">Estonia (EE)</option>
-                    <option value="FI">Finland (FI)</option>
-                    <option value="FR">France (FR)</option>
-                    <option value="GE">Georgia (GE)</option>
-                    <option value="DE">Germany (DE)</option>
-                    <option value="GR">Greece (GR)</option>
-                    <option value="HN">Honduras (HN)</option>
-                    <option value="HK">Hong Kong (HK)</option>
-                    <option value="HU">Hungary (HU)</option>
-                    <option value="IS">Iceland (IS)</option>
-                    <option value="IN">India (IN)</option>
-                    <option value="IQ">Iraq (IQ)</option>
-                    <option value="IE">Ireland (IE)</option>
-                    <option value="IL">Israel (IL)</option>
-                    <option value="IT">Italy (IT)</option>
-                    <option value="JP">Japan (JP)</option>
-                    <option value="JO">Jordan (JO)</option>
-                    <option value="KP">
-                      Korea, Democratic People's Republic of (KP)
-                    </option>
-                    <option value="KR">Korea, Republic of (KR)</option>
-                    <option value="KW">Kuwait (KW)</option>
-                    <option value="LV">Latvia (LV)</option>
-                    <option value="LB">Lebanon (LB)</option>
-                    <option value="LY">Libya (LY)</option>
-                    <option value="LT">Lithuania (LT)</option>
-                    <option value="LU">Luxembourg (LU)</option>
-                    <option value="MV">Maldives (MV)</option>
-                    <option value="MT">Malta (MT)</option>
-                    <option value="MX">Mexico (MX)</option>
-                    <option value="NL">Netherlands (NL)</option>
-                    <option value="NZ">New Zealand (NZ)</option>
-                    <option value="NF">Norfolk Island (NF)</option>
-                    <option value="NO">Norway (NO)</option>
-                    <option value="PK">Pakistan (PK)</option>
-                    <option value="PA">Panama (PA)</option>
-                    <option value="PY">Paraguay (PY)</option>
-                    <option value="PL">Poland (PL)</option>
-                    <option value="PT">Portugal (PT)</option>
-                    <option value="PR">Puerto Rico (PR)</option>
-                    <option value="QA">Qatar (QA)</option>
-                    <option value="RU">Russian Federation (RU)</option>
-                    <option value="SA">Saudi Arabia (SA)</option>
-                    <option value="RS">Serbia (RS)</option>
-                    <option value="SG">Singapore (SG)</option>
-                    <option value="SK">Slovakia (SK)</option>
-                    <option value="SI">Slovenia (SI)</option>
-                    <option value="ZA">South Africa (ZA)</option>
-                    <option value="ES">Spain (ES)</option>
-                    <option value="SE">Sweden (SE)</option>
-                    <option value="CH">Switzerland (CH)</option>
-                    <option value="TH">Thailand (TH)</option>
-                    <option value="TR">Turkey (TR)</option>
-                    <option value="UA">Ukraine (UA)</option>
-                    <option value="AE">United Arab Emirates (AE)</option>
-                    <option value="GB">United Kingdom (GB)</option>
-                    <option value="VN">Viet Nam (VN)</option>
-                    <option value="AX">Åland Islands (AX)</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 cardZipGroup">
-              <div className="form-group">
-                <input
-                  id="cardZip"
-                  className="form-control no-icon secure"
-                  type="text"
-                  placeholder="Postal code"
-                  maxLength={16}
-                  defaultValue=""
-                  data-hj-suppress=""
-                />
-              </div>
-            </div>
-          </div>
-          <button type="submit" className="btn btn-block btn-pay">
-            Pay $2.97 USD
+          <button onClick={(e)=>{e.preventDefault()
+            setPaypal(paypal=>!paypal)}}  type="submit" className="btn btn-block btn-pay" style={{background:"#ffaa08"}}>
+            Pay ${props.prize} USD Using Paypal
             {/* <span className="">
               Pay 
             </span> */}
           </button>
+          {paypal &&  <PayPalButton
+      createOrder={(data, actions) => createOrder(data, actions)}
+      onApprove={(data, actions) => onApprove(data, actions)}
+    />}
+          <button onClick={(e)=>{e.preventDefault()
+            setStrip2(stripe2=>!stripe2)}}  type="submit"  className="btn btn-block btn-pay" style={{background:"#101820FF"}}>
+            Pay ${props.prize} USD Using Stripe
+            {/* <span className="">
+              Pay 
+            </span> */}
+          </button>
+          {stripe2 && <Elements stripe={stripeTestPromise}>
+			<PaymentForm prize={props.prize}/>
+		</Elements> }
+         
+      
+         
+         
+          {/* <Paypal/> */}
+          
+        
+          
           <div className="agree">
             By completing your order, you agree to the{" "}
             <a href="https://twicsy.com/terms" target="_blank">
@@ -522,7 +417,7 @@ export default function Check_out() {
                     <div className="icon">
                       <i className="far fa-heart icon" aria-hidden="true" />
                     </div>
-                    <div className="desc">100 likes</div>
+                    <div className="desc">{props.likes}</div>
                     <div className="price">
                       <b className="total-cost-mini">$2.97</b>
                     </div>

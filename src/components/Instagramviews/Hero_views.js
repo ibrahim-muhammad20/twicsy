@@ -665,7 +665,7 @@ export default function Hero_views() {
                 <div className="flex-col">
                 <Link
                     className="btn btn--block"
-                   to="/Enterdetails"
+                   to="/Enterdetailsv"
                   >
                     <span />
                     <span />

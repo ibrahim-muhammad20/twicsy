@@ -2,16 +2,21 @@ import "./checkout.css"
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 export default function EnterNavbar() {
+  var textstyle = {
+    padding:"18px",
+    color: "#0A7E7E"
+  };
   return (
     <div id="f1">
       
        <div className="header ">
     <div className="contain">
-      <Link to="/" className="back">
+      <Link to="/buy-instagram-likes" className="back">
         <span style={{color:"#0A7E7E"}} className="hidden-xs">Back</span>
       </Link>
       <a href="/" className="logo">
-        <img className="img"src="../images2/logo.svg" alt="Twicsy" />
+        <h3 className="img" style={textstyle}>ViewsInsta </h3>
+        
       </a>
     </div>
     <div className="progress">

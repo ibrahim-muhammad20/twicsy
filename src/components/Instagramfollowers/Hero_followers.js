@@ -568,7 +568,7 @@ export default function Hero_followers() {
                 <div className="flex-col">
                   <Link
                     className="btn btn--block"
-                   to="/Enterdetails"
+                   to="/Enterdetailsf"
                   >
                     <span />
                     <span />
