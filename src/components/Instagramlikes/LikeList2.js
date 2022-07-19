@@ -7,7 +7,7 @@ import Move5 from './NextMove/Move5';
 import Move6 from './NextMove/Move6';
 import Move7 from './NextMove/Move7';
 import Move8 from './NextMove/Move8';
-
+import {motion} from "framer-motion";
 export default function LikeList2() {
     const [click,setClick]=useState(1);
     const [clickp,setClickP]=useState(0);
@@ -22,6 +22,16 @@ export default function LikeList2() {
   return (
     // This is High Quality like
     <div className="embla embla--alt slider-plans">
+       <motion.div className="slider__container embla__container2 is-draggable"
+       drag="x"
+       dragConstraints={{
+        left:30,
+        right:10
+
+
+
+       }}
+       >
         {click==1?  <Move1/>:
          click==2? <Move2/>:
          click==3? <Move3/>:
@@ -31,7 +41,7 @@ export default function LikeList2() {
          click==7? <Move7/>:
          click==8? <Move8/>:<Move1/> }
          {click==9 && setClick(click-8)}
-
+         </motion.div>
         {/* {clickp==0? <Move1/>:
          clickp==1? <Move8/>:
          clickp==2? <Move7/>:

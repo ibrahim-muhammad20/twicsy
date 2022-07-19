@@ -26,7 +26,7 @@ export default function Navbar() {
           <div className="header__inner">
             <div className="header__bar">
               <a className="logo" href="/">
-                <h3>ViewsInsta</h3>
+                <img src="./logo/VI.png" alt="" />
                
               </a>
               <button onClick={btnMobile } type="button" className="burger">

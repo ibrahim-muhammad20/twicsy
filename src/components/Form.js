@@ -88,9 +88,9 @@ export default function Form() {
                     </div>
                 </div>
                 <div className="flex-col">
-                    <div className="field field--textarea"><label for="message" className="field__label">Review</label>
-                        <div onChange={handleChange3} className="field__control"><textarea name="review" className="field__input"
-                                placeholder="Your Review" id="message" value={review}></textarea></div>
+                    <div className="field field--textarea" ><label for="message" className="field__label">Review</label>
+                        <div onChange={handleChange3} className="field__control"><textarea  name="review" className="field__input"
+                                placeholder="Your Review" id="message" ></textarea></div>
                     </div>
                     <div className="form__actions"><button className="btn btn--block"
                             type="submit"><span></span><span></span><span></span><strong>Submit Review</strong></button>

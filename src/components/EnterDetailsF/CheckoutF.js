@@ -44,7 +44,7 @@ export default function CheckoutF(props) {
       <span className="hidden-xs" style={{color:"white"}}>Back</span>
     </Link>
     <a href="/" className="logo">
-    <h3 className="img" style={textstyle}>ViewsInsta</h3>
+    <img className='img' src="../logo/VI.png" alt="" />
     </a>
   </div>
   <div className="progress">

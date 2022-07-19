@@ -19,6 +19,7 @@ export default function Flist2() {
     }
   return (
     <div className="embla embla--alt slider-plans">
+      <div className="slider__container embla__container2 is-draggable">
         {click==1?  <FMove1/>:
          click==2?  <FMove2/>:
          click==3?  <FMove3/>:
@@ -26,7 +27,7 @@ export default function Flist2() {
          click==5?  <FMove5/>:
          click==6?  <FMove6/>:<FMove1/> }
          {click==7 && setClick(click-6)}
-
+         </div>
 
     <div className="slider__cta embla__cta">
     <button onClick={btnClick} className="slider__button slider__button--prev embla__button embla__prev" />

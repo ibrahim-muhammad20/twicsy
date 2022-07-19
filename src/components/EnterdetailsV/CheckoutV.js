@@ -45,8 +45,9 @@ export default function CheckoutV(props) {
       <span className="hidden-xs" style={{color:"white"}}>Back</span>
     </Link>
     <a href="/" className="logo">
-    <h3 className="img" style={textstyle}>ViewsInsta </h3>
-    </a>
+    <img className='img' src="../logo/VI.png" alt="hello" />
+   
+    </a>  
   </div>
   <div className="progress">
     <div className="bar" />

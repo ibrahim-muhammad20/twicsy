@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {motion} from "framer-motion";
 export default function Hero_views() {
   return (
     <div>
@@ -508,7 +509,16 @@ export default function Hero_views() {
           </div>
           <div className="plans">
             <div className="embla embla--alt slider-plans">
-              <div className="slider__container embla__container is-draggable">
+              <motion.div className="slider__container embla__container is-draggable"
+               drag="x"
+               dragConstraints={{
+                 left:-90,
+                 right:0
+           
+           
+               }}>
+              
+   
                 <div
                   className="slider__slides embla__slides"
                   style={{ transform: "translate3d(0%, 0px, 0px)" }}
@@ -640,7 +650,7 @@ export default function Hero_views() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
               <div className="slider__cta embla__cta">
                 <button className="slider__button slider__button--prev embla__button embla__prev " />
                 <button className="slider__button slider__button--next embla__button embla__next" />

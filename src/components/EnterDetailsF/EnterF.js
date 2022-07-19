@@ -3,10 +3,7 @@ import React, { useState } from 'react'
 import {  useNavigate } from "react-router-dom";
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 export default function EnterF(props) {
-  var textstyle = {
-    padding:"18px",
-    color: "#0A7E7E"
-  };
+  
     // this disable is used for button
     const[disable,setDisable]=useState("");
     function dropDisable (event){
@@ -24,7 +21,7 @@ export default function EnterF(props) {
        <span style={{color:"#0A7E7E"}} className="hidden-xs">Back</span>
      </Link>
      <a href="/" className="logo">
-     <h3 className="img" style={textstyle}>ViewsInsta </h3>
+     <img className='img' src="./logo/VI.png" alt="" />   
      </a>
    </div>
    <div className="progress">

@@ -15,7 +15,8 @@ export default function EnterNavbar() {
         <span style={{color:"#0A7E7E"}} className="hidden-xs">Back</span>
       </Link>
       <a href="/" className="logo">
-        <h3 className="img" style={textstyle}>ViewsInsta </h3>
+      <img className='img' src="./logo/VI.png" alt="" />
+        {/* <h3 className="img" style={textstyle}>ViewsInsta </h3> */}
         
       </a>
     </div>

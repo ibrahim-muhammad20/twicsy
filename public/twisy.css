@@ -691,10 +691,13 @@ screen and (max-width:812px)and (orientation:landscape) {
     width: 100%
 }
 
-.embla .embla__container {
+.embla   {
     overflow: hidden
 }
 
+.embla__container2{
+    overflow: hidden
+}
 .embla .embla__slides {
     display: -moz-box;
     display: flex
@@ -1137,7 +1140,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     border-radius: .9rem;
     background-color: #f5f6f8;
     font-size: 1.5rem;
-    color: #363a3e
+    color: #3e3b36
 }
 
 .field .field__input.placeholder {
@@ -1235,7 +1238,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 
 @media(min-width:767.02px) {
     .field.is-invalid .field__input {
-        background-color: rgba(253, 82, 82, .1)
+        background-color: rgba(105, 253, 82, 0.1)
     }
 }
 

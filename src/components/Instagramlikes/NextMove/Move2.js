@@ -1,8 +1,15 @@
 import React from 'react'
-
+import {motion} from "framer-motion";
 export default function Move2() {
   return (
-    <div className="slider__container embla__container is-draggable">
+    <motion.div className="slider__container embla__container is-draggable"
+    drag="x"
+    dragConstraints={{
+      left:-240,
+      right:0
+
+
+    }}>
     <div
       className="slider__slides embla__slides"
       style={{ transform: "translate3d(-20%, 0px, 0px)" }}
@@ -207,6 +214,6 @@ export default function Move2() {
         </div>
       </div>
     </div>
-  </div>
+  </motion.div>
   )
 }
