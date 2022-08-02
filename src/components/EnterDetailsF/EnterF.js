@@ -18,7 +18,7 @@ export default function EnterF(props) {
       <div className="header ">
    <div className="contain">
      <Link to="/buy-instagram-followers" className="back">
-       <span style={{color:"#0A7E7E"}} className="hidden-xs">Back</span>
+       <span  className="hidden-xs">Back</span>
      </Link>
      <a href="/" className="logo">
      <img className='img' src="./logo/VI.png" alt="" />   
@@ -45,7 +45,7 @@ export default function EnterF(props) {
               </div>
               <div id="f1" className="body">
                 <form
-                  style={{ background: "#0A7E7E" }}
+                 
                   id=" f1 frmDetails"
                   className="form  "
                   method="POST"
@@ -151,7 +151,7 @@ export default function EnterF(props) {
                     <div className="mar-opt checkbox">
                       <input id="marCheck" type="checkbox" name="mailopt" />
                       <label htmlFor="marCheck">
-                        <span style={{ color: "white" }}>
+                        <span >
                           Send me special promotions and discounts
                         </span>
                       </label>
@@ -173,7 +173,7 @@ export default function EnterF(props) {
                 <img src="../images2/account-2.png" />
               </div>
               <p />
-              <p style={{ color: "white" }}>
+              <p >
                 Great service, very nice. Respond on time and also the delivery
                 was very fast. Thanks and will order again.
               </p>
@@ -185,7 +185,7 @@ export default function EnterF(props) {
                 <i className="fas fa-star" aria-hidden="true" />
               </div>
               <div className="author">
-                <strong style={{ color: "white" }}>Evelyn R.</strong>
+                <strong >Evelyn R.</strong>
               </div>
             </div>{" "}
           </div>

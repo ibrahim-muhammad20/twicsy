@@ -12,7 +12,7 @@ export default function EnterNavbar() {
        <div className="header ">
     <div className="contain">
       <Link to="/buy-instagram-likes" className="back">
-        <span style={{color:"#0A7E7E"}} className="hidden-xs">Back</span>
+        <span  className="hidden-xs">Back</span>
       </Link>
       <a href="/" className="logo">
       <img className='img' src="./logo/VI.png" alt="" />

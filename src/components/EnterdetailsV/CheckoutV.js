@@ -42,7 +42,7 @@ export default function CheckoutV(props) {
    <div className="header ">
   <div className="contain">
     <Link to="/Enterdetailsv" className="back">
-      <span className="hidden-xs" style={{color:"white"}}>Back</span>
+      <span className="hidden-xs" >Back</span>
     </Link>
     <a href="/" className="logo">
     <img className='img' src="../logo/VI.png" alt="hello" />

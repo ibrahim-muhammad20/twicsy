@@ -2193,7 +2193,7 @@ Politely add spaces to input values to increase readability (credit card numbers
 #f1 .box {
   position: relative;
   /* background: #fff; */
-  background: #0A7E7E;
+  background: #ffffff;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.04), 0px 0px 42px rgba(0, 0, 0, 0.04);
   border-radius: 20px;
   padding: 40px;

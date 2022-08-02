@@ -23,7 +23,7 @@ export default function Enterdetails(props) {
               </div>
               <div id="f1" className="body">
                 <form
-                  style={{ background: "#0A7E7E" }}
+                  // style={{ background: "#0A7E7E" }}
                   id=" f1 frmDetails"
                   className="form  "
                   method="POST"
@@ -141,7 +141,7 @@ export default function Enterdetails(props) {
                     <div className="mar-opt checkbox">
                       <input id="marCheck" type="checkbox" name="mailopt" />
                       <label htmlFor="marCheck">
-                        <span style={{ color: "white" }}>
+                        <span >
                           Send me special promotions and discounts
                         </span>
                       </label>
@@ -163,7 +163,7 @@ export default function Enterdetails(props) {
                 <img src="../images2/account-2.png" />
               </div>
               <p />
-              <p style={{ color: "white" }}>
+              <p >
                 Great service, very nice. Respond on time and also the delivery
                 was very fast. Thanks and will order again.
               </p>
@@ -175,7 +175,7 @@ export default function Enterdetails(props) {
                 <i className="fas fa-star" aria-hidden="true" />
               </div>
               <div className="author">
-                <strong style={{ color: "white" }}>Evelyn R.</strong>
+                <strong>Evelyn R.</strong>
               </div>
             </div>{" "}
           </div>

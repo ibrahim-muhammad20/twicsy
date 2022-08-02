@@ -26,7 +26,7 @@ export default function Navbar() {
           <div className="header__inner">
             <div className="header__bar">
               <a className="logo" href="/">
-                <img src="./logo/VI.png" alt="" />
+                <img style={{paddingBottom:"40px"}} src="./logo/VI.png"   alt="" />
                
               </a>
               <button onClick={btnMobile } type="button" className="burger">

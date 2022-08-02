@@ -203,7 +203,7 @@ textarea::placeholder {
 
 input:-webkit-autofill {
     -webkit-text-fill-color: inherit;
-    /* -webkit-box-shadow: inset 0 0 0 1000px #101820FF */
+    -webkit-box-shadow: inset 0 0 0 1000px #fff
 }
 
 input[type=button],
@@ -268,21 +268,21 @@ screen and (max-width:812px)and (orientation:landscape) {
 
 body {
     min-width: 320px;
-    background: #101820FF;
+    background: #fff;
     font-family: Euclid Circular A, Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.45;
-     color: #fff
+    color: #313336
 }
 
- body.no-scroll {
-    overflow: hidden;
+body.no-scroll {
+    overflow: hidden
 }
 
 a:not([class]) {
     color: inherit;
-    color: #0A7E7E;
+    color: #ff553c;
     text-decoration: none;
     background-image: -webkit-gradient(linear, left top, left bottom, from(currentColor), to(currentColor));
     background-image: -moz-linear-gradient(currentColor, currentColor);
@@ -463,7 +463,7 @@ ul:last-child {
 }
 
 .text-orange {
-    color: #0A7E7E
+    color: #ff553c
 }
 
 .text-center {
@@ -691,13 +691,10 @@ screen and (max-width:812px)and (orientation:landscape) {
     width: 100%
 }
 
-.embla   {
+.embla  {
     overflow: hidden
 }
 
-.embla__container2{
-    overflow: hidden
-}
 .embla .embla__slides {
     display: -moz-box;
     display: flex
@@ -798,7 +795,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .embla .embla__dot.is-active {
-    background-color: #0A7E7E;
+    background-color: #ff553c;
     opacity: 1
 }
 
@@ -859,17 +856,17 @@ screen and (max-width:812px)and (orientation:landscape) {
     justify-content: center;
     -moz-box-align: center;
     align-items: center;
-    color: #101820FF;
+    color: #fff;
     height: 5.7rem;
     padding: 0 3.8rem;
-    background-color: #0A7E7E;
+    background-color: #ff553c;
     cursor: pointer;
     text-decoration: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     font-size: 1.7rem;
-    border: 3px solid #0A7E7E;
+    border: 3px solid #ff553c;
     border-radius: .6rem;
     overflow: hidden;
     -webkit-transition-duration: .4s;
@@ -897,7 +894,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     position: absolute;
     width: 33.3334%;
     padding-bottom: 33.3334%;
-    background-color: #101820FF;
+    background-color: #fff;
     -webkit-transform: translateY(150%);
     -moz-transform: translateY(150%);
     transform: translateY(150%);
@@ -926,7 +923,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .btn:hover {
-    color: #0A7E7E
+    color: #ff553c
 }
 
 .btn:hover span {
@@ -961,20 +958,20 @@ screen and (max-width:812px)and (orientation:landscape) {
     font-size: 1.5rem;
     padding-left: 2.3rem;
     padding-right: 2.3rem;
-    background-color: #101820FF;
+    background-color: #fff;
     border: 1px solid #f2f2f2;
     border-radius: 1.1rem;
-    color: #fff;
+    color: #636e7d;
     -webkit-box-shadow: 0 4px 9px rgba(0, 0, 0, .05), 0 4px 4px rgba(0, 0, 0, .02);
     box-shadow: 0 4px 9px rgba(0, 0, 0, .05), 0 4px 4px rgba(0, 0, 0, .02)
 }
 
 .btn--secondary span {
-    background-color: #0A7E7E
+    background-color: #ff553c
 }
 
 .btn--secondary:hover {
-    color: #101820FF
+    color: #fff
 }
 
 .btn--tertiary {
@@ -989,8 +986,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 
 .btn--transparent {
     background: none;
-    border-color: transparent;
-    background-color: #fff;
+    border-color: transparent
 }
 
 .btn--transparent:hover {
@@ -1061,7 +1057,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     position: relative;
     width: 3.8rem;
     height: 3.8rem;
-    background-color: #101820FF;
+    background-color: #fff;
     border-radius: 50%;
     -webkit-box-shadow: 0 4px 14px rgba(148, 222, 222, .11);
     box-shadow: 0 4px 14px rgba(148, 222, 222, .11);
@@ -1085,8 +1081,8 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .btn-circle:hover {
-    color: #101820FF;
-    background-color: #0A7E7E;
+    color: #fff;
+    background-color: #ff553c;
     -webkit-box-shadow: 0 4px 24px rgba(148, 222, 222, .33);
     box-shadow: 0 4px 24px rgba(148, 222, 222, .33)
 }
@@ -1114,9 +1110,8 @@ screen and (max-width:812px)and (orientation:landscape) {
 .field .field__label {
     flex-shrink: 0;
     padding-right: 1rem;
-    color: #0A7E7E;
+    color: #4f5f6c;
     font-size: 1.4rem;
-    font-weight:bold;
     line-height: 4.6rem
 }
 
@@ -1140,7 +1135,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     border-radius: .9rem;
     background-color: #f5f6f8;
     font-size: 1.5rem;
-    color: #3e3b36
+    color: #363a3e
 }
 
 .field .field__input.placeholder {
@@ -1238,7 +1233,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 
 @media(min-width:767.02px) {
     .field.is-invalid .field__input {
-        background-color: rgba(105, 253, 82, 0.1)
+        background-color: rgba(253, 82, 82, .1)
     }
 }
 
@@ -1595,7 +1590,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: #101820FF;
+    background: #fff;
     -webkit-transition: all .2s linear;
     -moz-transition: all .2s linear;
     transition: all .2s linear
@@ -1604,8 +1599,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 @media(max-width:767px),
 screen and (max-width:812px)and (orientation:landscape) {
     .header:before {
-        /* background: rgba(255, 255, 255, .53); */
-        background: #101820FF;
+        background: rgba(255, 255, 255, .53);
         -webkit-backdrop-filter: blur(12px);
         backdrop-filter: blur(12px);
         -webkit-box-shadow: 0 4px 22px rgba(0, 0, 0, .07);
@@ -1757,7 +1751,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .nav a.is-active {
-    color: #0A7E7E
+    color: #ff553c
 }
 
 @media(max-width:767px),
@@ -1769,7 +1763,7 @@ screen and (max-width:812px)and (orientation:landscape) {
         left: -12px;
         height: 100%;
         width: 3px;
-        background-color: #0A7E7E
+        background-color: #ff553c
     }
 }
 
@@ -1844,7 +1838,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 
 .nav .nav__inner a:hover {
     position: relative;
-    color: #0A7E7E
+    color: #ff553c
 }
 
 .nav .nav__inner li+li {
@@ -2560,7 +2554,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     padding: 4.6rem 0 9.6rem;
     margin-left: auto;
     margin-right: auto;
-    background: #101820FF;
+    background: #fff;
     -webkit-box-shadow: 0 15px 28px rgba(202, 185, 217, .47);
     box-shadow: 0 15px 28px rgba(202, 185, 217, .47);
     border-radius: 3.8rem;
@@ -2645,7 +2639,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .phone .phone__avatar-image figure:after {
-    border: 2px solid #0A7E7E;
+    border: 2px solid #ff553c;
     width: -moz-calc(100% + 1.4rem);
     width: calc(100% + 1.4rem);
     height: -moz-calc(100% + 1.4rem);
@@ -2660,7 +2654,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     width: calc(100% + 3rem);
     height: -moz-calc(100% + 3rem);
     height: calc(100% + 3rem);
-    background-color: #101820FF;
+    background-color: #fff;
     -webkit-box-shadow: 0 3.2335px 6.467px rgba(0, 0, 0, .12);
     box-shadow: 0 3.2335px 6.467px rgba(0, 0, 0, .12)
 }
@@ -2765,7 +2759,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     white-space: nowrap;
     padding: 1rem 2.2rem 1rem 5.8rem;
     margin-bottom: .8rem;
-    background: #101820FF;
+    background: #fff;
     -webkit-box-shadow: 0 4px 5px rgba(162, 191, 207, .25), 0 9px 23px rgba(0, 0, 0, .1);
     box-shadow: 0 4px 5px rgba(162, 191, 207, .25), 0 9px 23px rgba(0, 0, 0, .1);
     border-radius: 2.5rem;
@@ -3247,12 +3241,12 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .hero .hero__text span.orange-highlight {
-    color: #0A7E7E
+    color: #ff553c
 }
 
 .hero .hero__text p {
     margin-bottom: 1.7rem;
-    color: rgba(255, 255, 255, 0.9)
+    color: rgba(71, 71, 71, .9)
 }
 
 .hero .hero__text p:last-child {
@@ -3305,7 +3299,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .hero--home .hero__actions {
-    color: #fff
+    color: #474747
 }
 
 @media(max-width:767px),
@@ -3537,7 +3531,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .blobs--yellow .blob--middle .blob__body {
-    fill: #101820FF
+    fill: #fff1cc
 }
 
 .blobs--yellow .blob__face {
@@ -3597,7 +3591,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #0A7E7E;
+    background-color: #ff553c;
     border-radius: 3.3rem
 }
 
@@ -3638,7 +3632,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     position: relative;
     z-index: 15;
     font-size: 1.6rem;
-    background: #101820FF;
+    background: #fff;
     overflow: hidden;
     border-radius: 2.2rem;
     -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .05);
@@ -3659,9 +3653,9 @@ screen and (max-width:812px)and (orientation:landscape) {
     z-index: 5;
     width: 100%;
     height: 100%;
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(3.75%, #101820FF), color-stop(50%, hsla(0, 0%, 100%, 0)));
-    background: -moz-linear-gradient(bottom, #101820FF 3.75%, hsla(0, 0%, 100%, 0) 50%);
-    background: linear-gradient(1turn, #101820FF 3.75%, hsla(0, 0%, 100%, 0) 50%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(3.75%, #fff), color-stop(50%, hsla(0, 0%, 100%, 0)));
+    background: -moz-linear-gradient(bottom, #fff 3.75%, hsla(0, 0%, 100%, 0) 50%);
+    background: linear-gradient(1turn, #fff 3.75%, hsla(0, 0%, 100%, 0) 50%);
     pointer-events: none;
     -webkit-transition: opacity .4s;
     -moz-transition: opacity .4s;
@@ -3679,8 +3673,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     max-height: 12rem;
     padding-right: 9rem;
     padding-bottom: 2rem;
-    /* color: rgba(130, 130, 130, .9); */
-    color:#fff;
+    color: rgba(130, 130, 130, .9);
     overflow: hidden;
     -webkit-transition-property: max-height opacity;
     -moz-transition-property: max-height opacity;
@@ -3708,9 +3701,9 @@ screen and (max-width:812px)and (orientation:landscape) {
     left: 0;
     width: 100%;
     height: 100%;
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(33%, #101820FF), to(hsla(0, 0%, 100%, 0)));
-    background: -moz-linear-gradient(bottom, #101820FF 33%, hsla(0, 0%, 100%, 0) 100%);
-    background: linear-gradient(1turn, #101820FF 33%, hsla(0, 0%, 100%, 0));
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(33%, #fff), to(hsla(0, 0%, 100%, 0)));
+    background: -moz-linear-gradient(bottom, #fff 33%, hsla(0, 0%, 100%, 0) 100%);
+    background: linear-gradient(1turn, #fff 33%, hsla(0, 0%, 100%, 0));
     pointer-events: none;
     -webkit-transition: opacity .4s;
     -moz-transition: opacity .4s;
@@ -3799,6 +3792,7 @@ screen and (max-width:812px)and (orientation:landscape) {
         padding-right: 1.2rem
     }
 }
+
 .section .section__head :last-child {
     margin-bottom: 0
 }
@@ -3832,7 +3826,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 
 .section .section__head h6 {
     margin-bottom: 1.7rem;
-    color: #0A7E7E;
+    color: #ff553c;
     font-weight: 400
 }
 
@@ -3844,7 +3838,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .section .section__head p {
-    color: #fff
+    color: #626366
 }
 
 @media(max-width:767px),
@@ -3865,7 +3859,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .section .section__footer p {
-    color: #fff
+    color: #777
 }
 
 .section .section__footer i {
@@ -3912,7 +3906,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 .section--gray {
     margin: 0;
     padding: 7.8rem 0 6rem;
-    background-color:#101820FF
+    background-color: #fafbff
 }
 
 @media(max-width:767px),
@@ -4025,8 +4019,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     border-radius: 2rem;
     border: 1px solid rgba(178, 199, 194, .2);
     font-size: 1.5rem;
-    color: #0A7E7E;
-    font-weight:bold
+    color: rgba(117, 117, 117, .9)
 }
 
 @media(max-width:767px),
@@ -4133,7 +4126,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .callout--yellow .callout__image {
-    background-color: #101820FF
+    background-color: #fff3d6
 }
 
 .callout--cyan .callout__image {
@@ -4855,7 +4848,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     border-radius: 50%;
     -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .05);
     box-shadow: 0 2px 5px rgba(0, 0, 0, .05);
-    background-color: #101820FF
+    background-color: #fff
 }
 
 @media(max-width:767px),
@@ -5088,7 +5081,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .card--yellow {
-    background-color: #101820FF
+    background-color: #fff3d6
 }
 
 .card--yellow p {
@@ -5100,14 +5093,12 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .card--cyan p {
-    font-weight: bold;
     color: #4b868c
 }
 
 .card--purple {
     background-color: #b083eb;
-    font-weight: bold;
-    color: #101820FF
+    color: #fff
 }
 
 .cards>ul {
@@ -5154,7 +5145,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .list-offers {
-    color: #101820FF
+    color: #657181
 }
 
 .list-offers>ul {
@@ -5243,8 +5234,6 @@ screen and (max-width:812px)and (orientation:landscape) {
     margin-left: .4rem;
     padding: .2 .7rem;
     border: 1px solid #d7d7d7;
-    /* new added */
-    fill:#fff;
     border-radius: .5rem
 }
 
@@ -5257,10 +5246,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     background-color: #000;
     border: 1px solid #000
 }
-.payments ul li.is-white {
-    background-color: #fff;
-    border: 1px solid #fff
-}
+
 .payments ul li.is-amex {
     background-color: #00a8e1;
     border: 1px solid #00a8e1
@@ -5334,7 +5320,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 
 .testimonial {
     position: relative;
-    background: #101820FF;
+    background: #fff;
     -webkit-box-shadow: 0 4px 14px rgba(148, 222, 222, .11);
     box-shadow: 0 4px 14px rgba(148, 222, 222, .11);
     border-radius: 2.5rem;
@@ -5344,7 +5330,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .testimonial blockquote {
-    color: #fff;
+    color: #4d5560;
     margin-bottom: 5.1rem
 }
 
@@ -5411,7 +5397,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     border-radius: 50%;
     color: #9097a0;
     letter-spacing: -.01em;
-    background: #101820FF;
+    background: #fff;
     -webkit-box-shadow: 0 2.22545px 4.4509px rgba(0, 0, 0, .05);
     box-shadow: 0 2.22545px 4.4509px rgba(0, 0, 0, .05)
 }
@@ -5428,7 +5414,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    border: .4rem solid #0A7E7E;
+    border: .4rem solid #ff553c;
     border-radius: inherit
 }
 
@@ -5528,7 +5514,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     -moz-transform: translateX(56%);
     transform: translateX(56%);
     border-radius: 50%;
-    background-color: #101820FF;
+    background-color: #fff;
     pointer-events: none
 }
 
@@ -5591,7 +5577,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .testimonial-with-video--yellow .svg-icon--testimonialCheck path {
-    fill: #101820FF
+    fill: #fff9e4
 }
 
 .testimonial-with-video--cyan {
@@ -5608,7 +5594,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 
 .testimonial-with-video--purple {
     background-color: #b375f2;
-    color: #101820FF
+    color: #fff
 }
 
 .testimonial-with-video--purple .svg-icon--testimonialCheck ellipse {
@@ -5733,7 +5719,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 
 .animated-link:hover {
     text-decoration: none;
-    color: #0A7E7E
+    color: #ff553c
 }
 
 .animated-link:hover .nav__char {
@@ -5785,7 +5771,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     height: 100%;
     padding: 2.3rem 3rem 8.3rem;
     border-radius: 2.5rem;
-    color: #fff;
+    color: #767676;
     text-align: center;
     overflow: hidden
 }
@@ -5796,12 +5782,12 @@ screen and (max-width:812px)and (orientation:landscape) {
 
 .service .service__entry h3 {
     margin-bottom: 2.3rem;
-    color: #0A7E7E
+    color: #000
 }
 
 .service .service__inner {
     position: relative;
-    background-color: #101820FF;
+    background-color: #fff;
     border-radius: 2.5rem;
     padding: 2.5rem 3rem 6.6rem
 }
@@ -5840,7 +5826,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .service--yellow .svg-icon--shield path {
-    fill: #101820FF
+    fill: #fff9e4
 }
 
 .service--cyan {
@@ -5901,7 +5887,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 .plan {
     position: relative;
     height: 100%;
-    background: #101820FF;
+    background: #fff;
     border-radius: 1.1rem;
     text-align: center;
     -webkit-box-shadow: 0 5px 5px rgba(152, 168, 173, .25);
@@ -5940,7 +5926,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     z-index: 10;
     opacity: 0;
     border-width: 3px;
-    border-color: #0A7E7E
+    border-color: #ff553c
 }
 
 .plan .plan__label {
@@ -5969,7 +5955,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     font-weight: 600;
     font-size: 1.1rem;
     line-height: 2rem;
-    background-color: #fb5902;
+    background-color: #f2f6f9;
     overflow: hidden
 }
 
@@ -6035,8 +6021,8 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .plan.best-value .plan__label {
-    color: #101820FF;
-    background-color: #0A7E7E
+    color: #fff;
+    background-color: #ff553c
 }
 
 .plan.most-popular .plan__label {
@@ -6088,8 +6074,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     line-height: 3.4rem;
     padding-left: 1.2em;
     padding-right: 1.2em;
-    color: #0A7E7E;
-    font-weight:bold;
+    color: #4d5158;
     opacity: .7;
     border-radius: 1rem;
     border: 1px solid rgba(243, 243, 243, .62);
@@ -6115,7 +6100,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 
 .plans .plans__navigation-button.is-active {
     opacity: 1;
-    background-color: #101820FF;
+    background-color: #fff;
     -webkit-box-shadow: 0 3px 7px rgba(174, 189, 217, .07), 0 4px 13px rgba(130, 145, 152, .08), 0 2px 2px rgba(65, 71, 79, .08);
     box-shadow: 0 3px 7px rgba(174, 189, 217, .07), 0 4px 13px rgba(130, 145, 152, .08), 0 2px 2px rgba(65, 71, 79, .08)
 }
@@ -6204,7 +6189,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .plans-alt .plan__type-body span {
-    color: #0A7E7E
+    color: #ff553c
 }
 
 .plans-alt .plan__type-body svg {
@@ -6249,22 +6234,22 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .plans-alt .plan__type--premium {
-    border-color: #0A7E7E
+    border-color: #ff553c
 }
 
 .plans-alt .plan__type--premium .plan__type-head {
-    background-color:#0A7E7E;
-    color: #101820FF
+    background-color: #ff553c;
+    color: #fff
 }
 
 .plans-alt .plan__type--premium .plan__type-body svg {
-    color: #0A7E7E
+    color: #ff553c
 }
 
 .plans-alt .plan__type.is-active .plan__type-checkbox {
     background-color: #000;
     border-color: #000;
-    color: #101820FF
+    color: #fff
 }
 
 .plans-alt .plans__actions {
@@ -6296,12 +6281,12 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .plans-alt .plans__button.is-active {
-    border-color: #0A7E7E
+    border-color: #ff553c
 }
 
 .plans-alt .plans__button.is-active strong {
-    background-color: #0A7E7E;
-    color: #101820FF
+    background-color: #ff553c;
+    color: #fff
 }
 
 .plans-alt .plans__button.is-active span {
@@ -6323,7 +6308,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 
 .plans-alt .plans__button span {
     font-size: 1.3rem;
-    color: #0A7E7E
+    color: #ff553c
 }
 
 @media(max-width:767px),
@@ -6407,7 +6392,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 .tooltip .tooltip__btn {
     width: 18px;
     height: 17px;
-    color:#0A7E7E
+    color: #ff553c
 }
 
 .tooltip-container {
@@ -6435,7 +6420,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 .tooltip-container .tooltip-container__inner {
     width: 25rem;
     padding: 2.2rem 1.9rem;
-    background: #101820FF;
+    background: #fff;
     border: 1px solid #f3f3f3;
     -webkit-box-shadow: 0 2.42763px 4.85526px rgba(174, 189, 217, .07), 0 3.23684px 18.6118px rgba(130, 145, 152, .19), 0 5.66447px 19.4211px rgba(65, 71, 79, .08);
     box-shadow: 0 2.42763px 4.85526px rgba(174, 189, 217, .07), 0 3.23684px 18.6118px rgba(130, 145, 152, .19), 0 5.66447px 19.4211px rgba(65, 71, 79, .08);
@@ -6444,7 +6429,6 @@ screen and (max-width:812px)and (orientation:landscape) {
 
 .list-features {
     background: #f9f9f9;
-    color:black;
     padding: 1.5em 1.8em;
     border-radius: 1.6rem;
     font-weight: 500
@@ -6496,7 +6480,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     -webkit-box-shadow: 0 4px 14px rgba(148, 222, 222, .11);
     box-shadow: 0 4px 14px rgba(148, 222, 222, .11);
     border-radius: 1.5rem;
-    background-color: #101820FF
+    background-color: #fff
 }
 
 @media(max-width:767px),
@@ -6720,7 +6704,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 body.mobile-nav-visible .burger span {
-    background: #0A7E7E;
+    background: #ff553c;
     -webkit-transition: background .2s, top .2s, opacity .2s, -webkit-transform .2s .25s;
     transition: background .2s, top .2s, opacity .2s, -webkit-transform .2s .25s;
     -moz-transition: background .2s, top .2s, opacity .2s, transform .2s .25s, -moz-transform .2s .25s;
@@ -6778,7 +6762,7 @@ body.mobile-nav-visible .burger span:nth-child(3) {
 }
 
 .price .price__top strong {
-    color: #fff;
+    color: #494c50;
     font-size: 3.2rem
 }
 
@@ -6828,7 +6812,7 @@ body.mobile-nav-visible .burger span:nth-child(3) {
     -webkit-transform: translate(-68%, -67%) rotate(40deg);
     -moz-transform: translate(-68%, -67%) rotate(40deg);
     transform: translate(-68%, -67%) rotate(40deg);
-    border-color: #d63a5e;
+    border-color: #3ad695;
     border-style: solid;
     border-width: 0 2px 2px 0
 }
@@ -6855,7 +6839,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #0A7E7E;
+    background-color: #e1fcff;
     border-radius: 3.3rem
 }
 
@@ -6928,7 +6912,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 
 .question .question__inner {
     position: relative;
-    background-color: #101820FF;
+    background-color: #fff;
     padding: 2.7rem 3.6rem;
     border-radius: 2.4rem;
     overflow: hidden
@@ -6949,9 +6933,9 @@ screen and (max-width:812px)and (orientation:landscape) {
     z-index: 5;
     width: 100%;
     height: 100%;
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(3.75%, #101820FF), to(hsla(0, 0%, 100%, 0)));
-    background: -moz-linear-gradient(bottom, #101820FF 3.75%, hsla(0, 0%, 100%, 0) 100%);
-    background: linear-gradient(1turn, #101820FF 3.75%, hsla(0, 0%, 100%, 0));
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(3.75%, #fff), to(hsla(0, 0%, 100%, 0)));
+    background: -moz-linear-gradient(bottom, #fff 3.75%, hsla(0, 0%, 100%, 0) 100%);
+    background: linear-gradient(1turn, #fff 3.75%, hsla(0, 0%, 100%, 0));
     -webkit-transition: opacity .5s;
     -moz-transition: opacity .5s;
     transition: opacity .5s
@@ -6960,7 +6944,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 .question .question__entry {
     max-height: 21.3rem;
     padding-bottom: 4rem;
-    color: #fff;
+    color: #474747;
     opacity: .9;
     -webkit-transition-property: max-height opacity;
     -moz-transition-property: max-height opacity;
@@ -7049,7 +7033,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 
 .article .article__head h6 {
     margin-bottom: 1rem;
-    color: #0A7E7E;
+    color: #ff553c;
     font-size: 1.6rem
 }
 
@@ -7095,7 +7079,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .article .article__head a:hover {
-    color:#0A7E7E
+    color: #ff553c
 }
 
 .article .article__excerpt {
@@ -7211,7 +7195,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .article--red .article__image {
-    background-color: #0A7E7E
+    background-color: #ff553c
 }
 
 .article--red .blobs .blob .blob__body {
@@ -7219,11 +7203,11 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .article--red .blobs .blob .blob__face {
-    stroke: #0A7E7E
+    stroke: #ff553c
 }
 
 .article--yellow .article__image {
-    background-color: #101820FF
+    background-color: #fff3d6
 }
 
 .article--yellow .blobs .blob .blob__body {
@@ -7326,7 +7310,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 .article--single .article__image {
     padding-bottom: 60%;
     margin-bottom: 7rem;
-    background-color: #0A7E7E
+    background-color: #ff553c
 }
 
 @media(max-width:767px),
@@ -7396,7 +7380,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     justify-content: center;
     width: 3rem;
     height: 3rem;
-    color: #101820FF;
+    color: #fff;
     background-color: #eee
 }
 
@@ -7434,7 +7418,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     display: block;
     width: 25%;
     height: 25%;
-    background-color: #0A7E7E;
+    background-color: #ff553c;
     border-radius: 100%;
     -webkit-animation: spinner-dot-before 2s ease-in-out infinite both;
     -moz-animation: spinner-dot-before 2s ease-in-out infinite both;
@@ -7572,128 +7556,4 @@ screen and (max-width:812px)and (orientation:landscape) {
         -moz-transform: scale(1);
         transform: scale(1)
     }
-}
-
-
-.ad2{
-    animation-delay: 25s
-}.ad3{
-    animation-delay: 50s
-}.ad4{
-    animation-delay: 75s
-}.ad5{
-    animation-delay: 100s
-}.ad6{
-    animation-delay: 125s
-}.ad7{
-    animation-delay: 150s
-}.ad8{
-    animation-delay: 175s
-}.ad9{
-    animation-delay: 200s
-}
-.ad10{
-    animation-delay: 225s
-}
-.ad11{
-    animation-delay: 250s
-}
-.ad12{
-    animation-delay: 275s
-}
-.ad13{
-    animation-delay: 300s
-}
-.ad14{
-    animation-delay: 325s
-}
-.ad15{
-    animation-delay: 350s
-}.ad16{
-    animation-delay: 375s
-}
-.ad17{
-    animation-delay: 400s
-}.ad18{
-    animation-delay: 425s
-}.ad19{
-    animation-delay: 325s
-}
-
-/* this is for the boost */
-.s1{
-   box-sizing:border-box;
-   display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0
-   
-}
-.s2{
-    position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%
-}
-.s3{
-    box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%
-
-    
-}
-.s4{
-
-    box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%
-}
-.s5{
-    display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0
-}
-.s6{
-    position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%
-}
-.s7{
-    transition-delay:0.4s
-}
-.s9{
-    box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%
-}
-.s10{
-    transition-delay:0.8s
-}
-.s11{
-    transition-delay:0s
-}
-
-/* @media(max-width:767px),
-screen and (max-width:812px)and (orientation:landscape) {
-    .callout {   
-    padding-top: 50%;
-    }
-} */
-/* @media(max-width:374px) {
-    .header {
-        padding-top: 70%;
-       
-    }
-} */
-/* customer css edit */
-.st1
-{
-    transform: translate3d(0%, 0px, 0px);
-}
-.st2
-{
-    left: 0%;
-}
-.st3
-{
-    transform: translate3d(-300%, 0px, 0px);    
-}
-.st4{
-    transform:translate3d(26.325%, 0px, 0px);
-}
-.st5{
-    left: -296.505%
-}
-.st7{
-    left: -301.477%
-}
-.st6{
-    transform:translate3d(-41.0526%, 0px, 0px); 
-}
-.shadeblack{
-  color:#101820FF
 }

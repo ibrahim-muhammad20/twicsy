@@ -282,7 +282,7 @@ body.no-scroll {
 
 a:not([class]) {
     color: inherit;
-    color: #0A7E7E;
+    color:  #ffffff;
     text-decoration: none;
     background-image: -webkit-gradient(linear, left top, left bottom, from(currentColor), to(currentColor));
     background-image: -moz-linear-gradient(currentColor, currentColor);
@@ -795,7 +795,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .embla .embla__dot.is-active {
-    background-color: #0A7E7E;
+    background-color:  #ffffff;
     opacity: 1
 }
 
@@ -859,14 +859,14 @@ screen and (max-width:812px)and (orientation:landscape) {
     color: #101820FF;
     height: 5.7rem;
     padding: 0 3.8rem;
-    background-color: #0A7E7E;
+    background-color:  #ffffff;
     cursor: pointer;
     text-decoration: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     font-size: 1.7rem;
-    border: 3px solid #0A7E7E;
+    border: 3px solid  #ffffff;
     border-radius: .6rem;
     overflow: hidden;
     -webkit-transition-duration: .4s;
@@ -1083,7 +1083,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 
 .btn-circle:hover {
     color: #101820FF;
-    background-color: #0A7E7E;
+    background-color:  #ffffff;
     -webkit-box-shadow: 0 4px 24px rgba(148, 222, 222, .33);
     box-shadow: 0 4px 24px rgba(148, 222, 222, .33)
 }
@@ -1111,7 +1111,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 .field .field__label {
     flex-shrink: 0;
     padding-right: 1rem;
-    color: #0A7E7E;
+    color:  #ffffff;
     font-size: 1.4rem;
     font-weight:bold;
     line-height: 4.6rem
@@ -2642,7 +2642,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .phone .phone__avatar-image figure:after {
-    border: 2px solid #0A7E7E;
+    border: 2px solid  #ffffff;
     width: -moz-calc(100% + 1.4rem);
     width: calc(100% + 1.4rem);
     height: -moz-calc(100% + 1.4rem);
@@ -3594,7 +3594,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #0A7E7E;
+    background-color:  #ffffff;
     border-radius: 3.3rem
 }
 
@@ -3829,7 +3829,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 
 .section .section__head h6 {
     margin-bottom: 1.7rem;
-    color: #0A7E7E;
+    color:  #ffffff;
     font-weight: 400
 }
 
@@ -4022,7 +4022,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     border-radius: 2rem;
     border: 1px solid rgba(178, 199, 194, .2);
     font-size: 1.5rem;
-    color: #0A7E7E;
+    color:  #ffffff;
     font-weight:bold
 }
 
@@ -5425,7 +5425,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    border: .4rem solid #0A7E7E;
+    border: .4rem solid  #ffffff;
     border-radius: inherit
 }
 
@@ -6085,7 +6085,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     line-height: 3.4rem;
     padding-left: 1.2em;
     padding-right: 1.2em;
-    color: #0A7E7E;
+    color:  #ffffff;
     font-weight:bold;
     opacity: .7;
     border-radius: 1rem;
@@ -6250,7 +6250,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .plans-alt .plan__type--premium .plan__type-head {
-    background-color:#0A7E7E;
+    background-color: #ffffff;
     color: #101820FF
 }
 
@@ -6297,7 +6297,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 .plans-alt .plans__button.is-active strong {
-    background-color: #0A7E7E;
+    background-color:  #ffffff;
     color: #101820FF
 }
 
@@ -6717,7 +6717,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 }
 
 body.mobile-nav-visible .burger span {
-    background: #0A7E7E;
+    background:  #ffffff;
     -webkit-transition: background .2s, top .2s, opacity .2s, -webkit-transform .2s .25s;
     transition: background .2s, top .2s, opacity .2s, -webkit-transform .2s .25s;
     -moz-transition: background .2s, top .2s, opacity .2s, transform .2s .25s, -moz-transform .2s .25s;
@@ -6852,7 +6852,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #0A7E7E;
+    background-color:  #ffffff;
     border-radius: 3.3rem
 }
 
@@ -7046,7 +7046,7 @@ screen and (max-width:812px)and (orientation:landscape) {
 
 .article .article__head h6 {
     margin-bottom: 1rem;
-    color: #0A7E7E;
+    color:  #ffffff;
     font-size: 1.6rem
 }
 
@@ -7431,7 +7431,7 @@ screen and (max-width:812px)and (orientation:landscape) {
     display: block;
     width: 25%;
     height: 25%;
-    background-color: #0A7E7E;
+    background-color:  #ffffff;
     border-radius: 100%;
     -webkit-animation: spinner-dot-before 2s ease-in-out infinite both;
     -moz-animation: spinner-dot-before 2s ease-in-out infinite both;
